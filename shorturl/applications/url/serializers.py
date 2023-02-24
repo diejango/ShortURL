@@ -5,7 +5,7 @@ class UrlSerializer(serializers.ModelSerializer):
     class Meta:
         model = Url
         fields=(
-            'id',
+            'url',
         )
 
 class UrlSerializer2(serializers.ModelSerializer):
@@ -13,4 +13,5 @@ class UrlSerializer2(serializers.ModelSerializer):
         model = Url
         fields=(
             'url',
+            'get',
         )
